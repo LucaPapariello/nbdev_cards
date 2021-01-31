@@ -1,5 +1,33 @@
-# nbdev template
+# Deck of cards
+> A minimal example of using nbdev to create a python library.
 
-Use this template to more easily create your [nbdev](https://nbdev.fast.ai/) project.
 
-_If you are using an older version of this template, and want to upgrade to the theme-based version, see [this helper script](https://gist.github.com/hamelsmu/977e82a23dcd8dcff9058079cb4a8f18) (more explanation of what this means is contained in the link to the script)_.
+## Install
+
+After cloning this repository:
+
+`pip install -e .`
+
+## How to use
+
+Playing cards in python!
+
+```python
+from nbdev_cards.card import Card
+
+c = Card(suit=1, rank=3)
+print(f'You picked the card: {c}')
+```
+
+    You picked the card: 3 of Diamonds
+
+
+```python
+from nbdev_cards.deck import Deck
+
+d = Deck()
+print(f'Number of playing cards in the deck: {len(d.cards)}')
+```
+
+    Number of playing cards in the deck: 52
+
