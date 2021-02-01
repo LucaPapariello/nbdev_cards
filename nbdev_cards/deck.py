@@ -63,3 +63,5 @@ class Deck:
         """
         for i in range(num):
             hand.add_card(self.pop_card())
+
+    def __repr__(self): return self.__str__()
