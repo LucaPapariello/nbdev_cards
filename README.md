@@ -13,8 +13,6 @@ After cloning this repository:
 Playing cards in python!
 
 ```python
-from nbdev_cards.card import Card
-
 c = Card(suit=1, rank=3)
 print(f'You picked the card: {c}')
 ```
@@ -23,8 +21,6 @@ print(f'You picked the card: {c}')
 
 
 ```python
-from nbdev_cards.deck import Deck
-
 d = Deck()
 print(f'Number of playing cards in the deck: {len(d.cards)}')
 ```
